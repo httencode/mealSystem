@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no;">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>个人中心</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/info.css">
+  <link rel="stylesheet" href="css/commom.css">
+  <script type="text/javascript" src="./js/common.js">
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html" class="logo" style="margin-left:5%;">
+    </a>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-1 col-xs-1 col-lg-1"></div>
+      <div class="col-sm-10 col-xs-10 col-lg-5">
+        <p style="text-align:center;color:#777;font-size:.4rem;color:#777;padding-top:.3rem">个人中心</p>
+        <form action="" class="form">
+          <input type="text" class="form-control" placeholder="用户名">
+          <input type="text" class="form-control" placeholder="手机号">
+          <input type="text" class="form-control" placeholder="姓名">
+          <input type="text" class="form-control" placeholder="邮箱">
+          <p class="gender">性别: 先生
+            <input type="radio" name="field_name" checked value="man" style="margin-right:.3rem"> 女士
+            <input type="radio" name="field_name" value="female">
+          </p>
+          <span class="manage">地址管理:</span>
+          <ul class="addr">
+            <!-- <li class="def">
+              <input type="radio" name="default">
+            </li> -->
+            <li class="address">
+              广东医科大学附属医院骨科302
+            </li>
+            <li class="edit">
+              <img src="img/编辑送餐地址@3x.png" width="14px" alt="">
+            </li>
+            <li class="del">
+              <img src="img/删除送餐地址@3x.png" width="14px" alt="">
+            </li>
+            <li>
+              <span>张云</span>
+              <span class="phone">10080</span>
+              <span>女士</span>
+            </li>
+          </ul>
+          <ul class="addr">
+            <!-- <li class="def">
+              <input type="radio" name="default">
+            </li> -->
+            <li class="address">
+              广东医科大学附属医院骨科302
+            </li>
+            <li class="edit">
+              <img src="img/编辑送餐地址@3x.png" width="14px" alt="">
+            </li>
+            <li class="del">
+              <img src="img/删除送餐地址@3x.png" width="14px" alt="">
+            </li>
+            <li>
+              <span>张云</span>
+              <span class="phone">10080</span>
+              <span>女士</span>
+            </li>
+          </ul>
+          <button class="addmore" style=" background: rgba(72, 180, 156, 0.8);border:none;color:#fff;border-radius:3px;padding:3px 6px">添加地址</button>
+          <a href="address.html" class="submit" value="提交" style="margin-top:.6rem;display:block;width:100%;">
+        </form>
+
+      </div>
+      <div class="col-sm-1 col-xs-1 col-lg-6">
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+<script>
+  ! function (e) {
+    var t = e.document,
+      n = t.documentElement,
+      i = "orientationchange" in e ? "orientationchange" : "resize",
+      a = function e() {
+        var t = n.getBoundingClientRect().width;
+        return n.style.fontSize = 5 * Math.max(Math.min(t / 750 * 20, 11.2), 8.55) + "px", e
+      }();
+    n.setAttribute("data-dpr", e.navigator.appVersion.match(/iphone/gi) ? e.devicePixelRatio : 1), /iP(hone|od|ad)/.test(
+        e.navigator.userAgent) && (t.documentElement.classList.add("ios"), parseInt(e.navigator.appVersion.match(
+        /OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8 && t.documentElement.classList.add("hairline")), t.addEventListener &&
+      (e.addEventListener(i, a, !1), t.addEventListener("DOMContentLoaded", a, !1))
+  }(window);
+</script>
+
+</html>

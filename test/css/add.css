@@ -1,0 +1,91 @@
+.finish {
+  font-size: 0.26rem;
+  color: #2bccc1;
+  letter-spacing: 0;
+  padding-right: 0.2rem; }
+
+.info-part {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #ecedef;
+  padding: 0.2rem 0.2rem; }
+  .info-part .contact {
+    font-size: 0.28rem;
+    color: #666666;
+    letter-spacing: 0; }
+  .info-part .personInfo {
+    background: #fff;
+    width: 100%;
+    padding: 0.2rem;
+    padding-right: 0;
+    height: 2.8rem; }
+    .info-part .personInfo p {
+      font-size: 0.28rem;
+      color: #333333;
+      font-weight: 600; }
+    .info-part .personInfo .write-name {
+      width: 86%;
+      height: 0.7rem;
+      float: right;
+      border-bottom: 1px solid #eaeaea; }
+    .info-part .personInfo .name {
+      float: left;
+      font-size: 0.28rem;
+      color: #333333;
+      font-weight: 600;
+      margin-top: 0.1rem; }
+    .info-part .personInfo .input-name {
+      border: 0;
+      width: 100%;
+      display: inline-block;
+      margin-top: 0rem;
+      height: 0.6rem;
+      width: 50%; }
+    .info-part .personInfo *:focus {
+      outline: none; }
+    .info-part .personInfo .gender {
+      clear: both;
+      height: 0.84rem;
+      border-bottom: 1px solid #eaeaea;
+      padding-top: 0.2rem;
+      padding-left: 0.94rem; }
+      .info-part .personInfo .gender li {
+        float: left;
+        list-style: none;
+        font-size: 0.28rem;
+        font-weight: 600;
+        color: #333333;
+        line-height: 22px;
+        margin-right: 0.2rem; }
+        .info-part .personInfo .gender li img {
+          width: 0.24rem;
+          height: auto; }
+    .info-part .personInfo .phone-num {
+      padding-top: 0.2rem; }
+  .info-part .address {
+    font-size: 0.28rem;
+    color: #666666;
+    letter-spacing: 0;
+    padding: 0.2rem 0; }
+  .info-part .address-detail {
+    width: 100%;
+    height: 2.6rem;
+    font-size: 0.28rem;
+    color: #bbbbbb;
+    letter-spacing: 0.37p;
+    line-height: 0.44rem;
+    padding: 0.2rem;
+    resize: none;
+    outline: 0;
+    border: 0;
+    font-weight: 400; }
+
+textarea::-webkit-input-placeholder {
+  font-size: 0.28rem;
+  color: #bbb;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 0.42rem; }
+
+/*# sourceMappingURL=add.css.map */

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/carts.css">
+    <link rel="stylesheet" href="css/commom.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 公用的header -->
+    <div class="meal-header" style="position:fixed">
+        <a href="index.html" class="logo" style="margin-left:5%;">
+        </a>
+    </div>
+    <section class="cartMain" style="padding-top:60px;">
+        <div class="cartMain_hd">
+            <ul class="order_lists cartTop">
+                <li class="list_chk">
+                    <!--所有商品全选-->
+                    <input type="checkbox" id="all" class="whole_check">
+                    <label for="all"></label>
+                    <span style="font-size:.3rem">全选</span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="cartBox">
+            <div class="order_content">
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_8" class="son_check">
+                        <label for="checkbox_8"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img">
+                            <a href="javascript:;">
+                                <img src="img/炒肥牛.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="list_text">
+                            <a href="javascript:;">炒肥牛</a>
+                        </div>
+                    </li>
+
+                    <li class="list_price">
+                        <p class="price">￥10</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥10</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del">
+                            <a href="javascript:;" class="delBtn">移除</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="order_lists">
+                    <li class="list_chk">
+                        <input type="checkbox" id="checkbox_9" class="son_check">
+                        <label for="checkbox_9"></label>
+                    </li>
+                    <li class="list_con">
+                        <div class="list_img">
+                            <a href="javascript:;">
+                                <img src="img/奥尔良蜜汁烤鸡翅.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="list_text">
+                            <a href="javascript:;">奥尔良蜜汁烤鸡翅</a>
+                        </div>
+                    </li>
+
+                    <li class="list_price">
+                        <p class="price">￥18</p>
+                    </li>
+                    <li class="list_amount">
+                        <div class="amount_box">
+                            <a href="javascript:;" class="reduce reSty">-</a>
+                            <input type="text" value="1" class="sum">
+                            <a href="javascript:;" class="plus">+</a>
+                        </div>
+                    </li>
+                    <li class="list_sum">
+                        <p class="sum_price">￥18</p>
+                    </li>
+                    <li class="list_op">
+                        <p class="del">
+                            <a href="javascript:;" class="delBtn">移除</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--底部-->
+
+
+    <div class="bar-wrapper">
+        <div class="bar-right">
+            <div class="piece">已选商品
+                <strong class="piece_num">0</strong>件</div>
+            <div class="totalMoney">共计:
+                <strong class="total_text">0.00</strong>
+            </div>
+            <div class="calBtn">
+                <a href="orderList.html">结算</a>
+            </div>
+        </div>
+    </div>
+    <section class="model_bg"></section>
+    <section class="my_model">
+        <p class="title">删除宝贝
+            <span class="closeModel">X</span>
+        </p>
+        <p>您确认要删除该宝贝吗？</p>
+        <div class="opBtn">
+            <a href="javascript:;" class="dialog-sure">确定</a>
+            <a href="javascript:;" class="dialog-close">关闭</a>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/carts.js"></script>
+
+
+</body>
+<script>
+    ! function (e) {
+        var t = e.document,
+            n = t.documentElement,
+            i = "orientationchange" in e ? "orientationchange" : "resize",
+            a = function e() {
+                var t = n.getBoundingClientRect().width;
+                return n.style.fontSize = 5 * Math.max(Math.min(t / 750 * 20, 11.2), 8.55) + "px", e
+            }();
+        n.setAttribute("data-dpr", e.navigator.appVersion.match(/iphone/gi) ? e.devicePixelRatio : 1), /iP(hone|od|ad)/
+            .test(
+                e.navigator.userAgent) && (t.documentElement.classList.add("ios"), parseInt(e.navigator.appVersion.match(
+                /OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8 && t.documentElement.classList.add("hairline")), t.addEventListener &&
+            (e.addEventListener(i, a, !1), t.addEventListener("DOMContentLoaded", a, !1))
+    }(window);
+</script>
+
+</html>

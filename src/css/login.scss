@@ -1,0 +1,61 @@
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../img/login.png') no-repeat 25%;
+    background-size: cover;
+    p {
+        text-align: center;
+        color: #fff;
+        font-size: .4rem;
+        padding-top: 2rem;
+    }
+    .form {
+        width: 100%;
+        height: 5rem;
+        background-color: rgba(255, 255, 2555, .35);
+        margin: 0 auto;
+        padding: .2rem;
+        margin-top: .3rem;
+        border-radius: .05rem;
+        box-shadow: 0 2px 4px 0 rgba(112, 127, 208, 0.6);
+        padding-top: .6rem;
+        input {
+            margin: 0 auto;
+            display: block;
+            width: 70%;
+            height: .7rem;
+            padding-left: .2rem;
+            margin-top: .3rem;
+            border: none;
+            border-radius: 2px;
+        }
+        a {
+            text-align: center;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .forget {
+            display: block;
+            padding-top: .1rem;
+            text-align: right;
+            width: 70%;
+            margin: 0 auto;
+            color: #48b49c;
+        }
+        .submit {
+            color: rgba(255, 255, 255, .8);
+            border-radius: 2px;
+            font-size: .28rem;
+            background: #48b49c;
+            &:hover {
+                background: #4ec2a7;
+            }
+        }
+        .sign {
+            font-size: .25rem;
+            text-align: left;
+        }
+    }
+}

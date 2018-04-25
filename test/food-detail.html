@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>物品详情</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/food-detail.css">
+  <link rel="stylesheet" href="./css/commom.css">
+  <link rel="stylesheet" href="./build/css/ydui.css">
+  <script src="./build/js/ydui.js"></script>
+  <script src="./build/js/ydui.flexible.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<style type="text/css">
+  .btn-hollow:after {
+    border: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .row {
+      margin-top: 1rem;
+    }
+    .food-img>img {
+      width: 80%;
+      margin-left: 10%;
+    }
+    .name {
+      padding-top: .8rem;
+    }
+
+
+  }
+
+  @media screen and (max-width:500px) {
+    .food-img {
+      padding: 0;
+      margin: 0
+    }
+    .food-img>img {
+      width: 100%;
+    }
+
+
+  }
+
+  body {
+    background: #fff;
+  }
+</style>
+
+<body>
+  <div class="meal-header" style="position: fixed;">
+    <a href="index.html" class="logo" style="margin-left:5%;">
+    </a>
+  </div>
+
+  <div class="container" style="padding-top:1.1rem;">
+    <div class="row ">
+      <div class="col-sm-6 food-img">
+        <img src="./img/奥尔良蜜汁烤鸡翅.jpg " alt=" ">
+      </div>
+      <div class="col-sm-6 ">
+        <div class="name">
+          奥尔良蜜汁烤鸡翅
+        </div>
+        <p class="sell">
+          <span>月销量：123</span>
+          <span style="margin-left:.3rem">评论数量：13</span>
+        </p>
+        <div class="price">
+          <span style="font-size:.5rem;margin-right:3.5rem;">￥13</span>
+          <span class="m-spinner" id="J_Quantity">
+            <a href="javascript:; " class="J_Del "></a>
+            <input type="text " class="J_Input " value="1" placeholder=" " />
+            <a href="javascript:; " class="J_Add "></a>
+          </span>
+        </div>
+        <a href="cart.html" class="btn btn-hollow " style="margin-left:0rem; border:1px solid #48b49c;">加入购物车</a>
+        <!-- <a href="javascript:; " class="btn btn-hollow " style="border:1px solid #48b49c;">立即购买</a> -->
+
+
+      </div>
+    </div>
+    <div class="row" style="padding:0 5.5%;margin-top:-.1rem;">
+      <div class="m-celltitle " style="margin-top:.5rem;padding-left:0">评论：</div>
+      <div class="m-cell ">
+        <div class="cell-item " style="border:1px solid #777">
+          <div class="cell-right ">
+            <textarea class="cell-textarea " placeholder="你想说的话~~ " style="margin:0rem ;"></textarea>
+
+          </div>
+        </div>
+        <a href="javascript:; " class="btn btn-hollow " style="border:1px solid #48b49c;height:.5rem;line-height:.5rem;margin:0.1rem 0 .2rem">提交</a>
+
+      </div>
+      <ul class="comment ">
+        <li>
+          胖胖：很赞！
+        </li>
+        <li>
+          瘦瘦：好吃到停不下来
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+<script>
+  ! function (e) {
+    var t = e.document,
+      n = t.documentElement,
+      i = "orientationchange " in e ? "orientationchange " : "resize ",
+      a = function e() {
+        var t = n.getBoundingClientRect().width;
+        return n.style.fontSize = 5 * Math.max(Math.min(t / 750 * 20, 11.2), 8.55) + "px ", e
+      }();
+    n.setAttribute("data-dpr ", e.navigator.appVersion.match(/iphone/gi) ? e.devicePixelRatio : 1), /iP(hone|od|ad)/.test(
+        e.navigator.userAgent) && (t.documentElement.classList.add("ios "), parseInt(e.navigator.appVersion.match(
+        /OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8 && t.documentElement.classList.add("hairline ")), t.addEventListener &&
+      (e.addEventListener(i, a, !1), t.addEventListener("DOMContentLoaded ", a, !1))
+  }(window);
+</script>
+<script>
+  $('#J_Quantity').spinner({
+    input: '.J_Input',
+    add: '.J_Add',
+    minus: '.J_Del',
+    unit: function () {
+      return 1;
+    },
+    max: function () {
+      return (1 + 2 + 3 + 4 + 5) * 5;
+    },
+    callback: function (value, $ele) {
+      // $ele 当前文本框[jQuery对象]
+      // $ele.css('background', '#FF5E53');
+      console.log('值：' + value);
+    }
+  });
+</script>
+
+
+</html>

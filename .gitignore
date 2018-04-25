@@ -1,0 +1,5 @@
+/node_modules
+/dest
+tree.txt
+.idea
+*.min.css

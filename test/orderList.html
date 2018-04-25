@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>提交订单</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/food-detail.css">
+  <link rel="stylesheet" href="./css/commom.css">
+  <link rel="stylesheet" href="./css/orderList.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="meal-header" style="position: fixed;">
+    <a href="index.html" class="logo" style="margin-left:5%;">
+    </a>
+  </div>
+  <div class="submit-order">
+    <div class="delivery">
+      <span class="icon"></span>
+      <span class="delier">地址选择</span>
+    </div>
+
+
+    <span>
+      <div class="address-part">
+        <input type="radio" name="address" class="address-img">
+        <p class="address-con">
+          广东医科大学附属第一医院骨科304
+        </p>
+      </div>
+      <div class="address-part">
+        <input type="radio" name="address" class="address-img">
+        <p class="address-con">
+          广东医科大学附属第一医院骨科305
+        </p>
+      </div>
+      <div class="info" v-show="addressShow">
+        <li>张雨</li>
+        <li class="gender">女士</li>
+        <li>10086</li>
+      </div>
+      <div class="arrival">
+        <span class="time">预计15分钟后送达</span>
+      </div>
+    </span>
+    <div class="order-list" style="margin-top:.2rem;">
+      <div>
+        <div class="submit-item">
+          <img src='./img/奥尔良蜜汁烤鸡翅.jpg' class="list-item" alt="">
+          <div class="item-con">
+            <p class="tit">
+              <span class="tit-con">
+                奥尔良蜜汁烤鸡翅
+              </span>
+              <span style="float:right;padding-right:.2rem;">
+                18
+              </span>
+              <span style="float:right">
+                ￥
+              </span>
+            </p>
+            <p class="amount">
+              <span>*</span>
+              <span>1</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <li>
+        <span>餐盒费</span>
+        <span class="price">￥3.5</span>
+      </li>
+      <li>
+        <span>配送费</span>
+        <span class="price">￥2</span>
+      </li>
+      <div class="total">
+        <span class="left-dot"></span>
+        <span class="right-dot"></span>
+        <span>小计</span>
+        <span class="payment">￥23.5</span>
+      </div>
+      <span style="padding-left:.2rem;">备注：</span>
+      <textarea name="remark" id="remark" placeholder="请输入你的备注" style="resize:none;"></textarea>
+      <a href="payment.html" class="btn btn-hollow " style=" color:#777; border:1px solid #48b49c;margin-top:0.1rem;margin-left:0.2rem;">提交订单</a>
+    </div>
+
+  </div>
+  </div>
+
+
+</body>
+<script>
+  ! function (e) {
+    var t = e.document,
+      n = t.documentElement,
+      i = "orientationchange" in e ? "orientationchange" : "resize",
+      a = function e() {
+        var t = n.getBoundingClientRect().width;
+        return n.style.fontSize = 5 * Math.max(Math.min(t / 750 * 20, 11.2), 8.55) + "px", e
+      }();
+    n.setAttribute("data-dpr", e.navigator.appVersion.match(/iphone/gi) ? e.devicePixelRatio : 1), /iP(hone|od|ad)/
+      .test(
+        e.navigator.userAgent) && (t.documentElement.classList.add("ios"), parseInt(e.navigator.appVersion.match(
+        /OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8 && t.documentElement.classList.add("hairline")), t.addEventListener &&
+      (e.addEventListener(i, a, !1), t.addEventListener("DOMContentLoaded", a, !1))
+  }(window);
+</script>
+
+</html>

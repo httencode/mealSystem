@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>注册页面</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/sign.css">
+  <link rel="stylesheet" href="./css/commom.css">
+  <script type="text/javascript" src="./js/common.js">
+  </script>
+</head>
+
+<body>
+  <div class="header">
+    <a href="index.html" class="logo" style="margin-left:5%;">
+    </a>
+    <p style="font-size:.2rem; width:auto;display:inline-block;position: absolute;right:10%;padding-top:.55rem;">
+      已有账号?
+      <a href="login.html" style="text-decoration:underline;color:#48b49c">登录</a>
+    </p>
+  </div>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-3 col-xs-1 col-lg-1"></div>
+      <div class="col-sm-6 col-xs-10 col-lg-5">
+        <p style="text-align:center;color:#fff;font-size:.4rem;padding-top:1rem">个人注册</p>
+
+        <form action="" class="form">
+
+          <input type="text" class="form-control" placeholder="用户名">
+          <input type="text" class="form-control" placeholder="手机号">
+          <input type="text" class="form-control" placeholder="姓名">
+          <input type="text" class="form-control" placeholder="邮箱">
+          <p class="gender">性别: 先生
+            <input type="radio" name="field_name" checked value="man" style="margin-right:.3rem"> 女士
+            <input type="radio" name="field_name" value="female">
+          </p>
+          <input type="password" class="form-control" placeholder="密码" style="margin-top:0;">
+          <input type="password" class="form-control" placeholder="再次输入密码">
+          <!-- <input type="text" class="form-control" placeholder="验证码">
+          <button style="margin-left: 15%;margin-top:.1rem;font-size:.1rem;">获取验证码</button> -->
+          <input type="submit" class="submit" value="注册" style="margin-top:.6rem;display:block">
+        </form>
+
+      </div>
+      <div class="col-sm-3 col-xs-1 col-lg-6"></div>
+    </div>
+  </div>
+
+
+
+</body>
+<script>
+  ! function (e) {
+    var t = e.document,
+      n = t.documentElement,
+      i = "orientationchange" in e ? "orientationchange" : "resize",
+      a = function e() {
+        var t = n.getBoundingClientRect().width;
+        return n.style.fontSize = 5 * Math.max(Math.min(t / 750 * 20, 11.2), 8.55) + "px", e
+      }();
+    n.setAttribute("data-dpr", e.navigator.appVersion.match(/iphone/gi) ? e.devicePixelRatio : 1), /iP(hone|od|ad)/.test(
+        e.navigator.userAgent) && (t.documentElement.classList.add("ios"), parseInt(e.navigator.appVersion.match(
+        /OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8 && t.documentElement.classList.add("hairline")), t.addEventListener &&
+      (e.addEventListener(i, a, !1), t.addEventListener("DOMContentLoaded", a, !1))
+  }(window);
+</script>
+
+</html>

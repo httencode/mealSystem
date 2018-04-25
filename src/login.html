@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/commom.css">
+  <title>登录页面</title>
+</head>
+
+<body>
+  <div class="meal-header">
+    <a href="index.html" class="logo" style="margin-left:5%;display:inline-block;">
+    </a>
+  </div>
+
+  <div class="container">
+    <img src="./img/logo.png" width="100px" height="auto" style="display:inline-block;margin:0" alt="">
+    <div class="row">
+      <p>用户登录</p>
+      <div class="col-sm-3 col-xs-1 col-lg-4"></div>
+      <div class="col-sm-6 col-xs-10 col-lg-4">
+        <form action="" class="form">
+          <input type="text" class="form-control" placeholder="用户名">
+          <input type="password" class="form-control" placeholder="密码">
+          <a class="forget" href="forgetpwd.html">忘记密码？</a>
+          <input type="submit" class="submit" value="登录">
+          <p class="forget sign">还没有账号？
+            <a href="sign.html" style=" color: #48b49c;text-decoration:underline">立即注册</a>
+          </p>
+
+        </form>
+
+      </div>
+      <div class="col-sm-3 col-xs-1 col-lg-4"></div>
+    </div>
+
+  </div>
+</body>
+<script>
+  ! function (e) {
+    var t = e.document,
+      n = t.documentElement,
+      i = "orientationchange" in e ? "orientationchange" : "resize",
+      a = function e() {
+        var t = n.getBoundingClientRect().width;
+        return n.style.fontSize = 5 * Math.max(Math.min(t / 750 * 20, 11.2), 8.55) + "px", e
+      }();
+    n.setAttribute("data-dpr", e.navigator.appVersion.match(/iphone/gi) ? e.devicePixelRatio : 1), /iP(hone|od|ad)/.test(
+        e.navigator.userAgent) && (t.documentElement.classList.add("ios"), parseInt(e.navigator.appVersion.match(
+        /OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8 && t.documentElement.classList.add("hairline")), t.addEventListener &&
+      (e.addEventListener(i, a, !1), t.addEventListener("DOMContentLoaded", a, !1))
+  }(window);
+</script>
+
+</html>

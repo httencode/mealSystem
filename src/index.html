@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首页</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    @media screen and (max-width: 768px) {
+
+      .form-control {
+        width: 2.2rem !important;
+        display: inline-block;
+      }
+    }
+
+    @media screen and (max-width:500px) {
+
+      .form-group {
+        display: inline-block !important;
+        width: 4rem !important;
+      }
+      .form-control {
+        width: 4rem !important;
+        display: inline-block !important;
+        margin-top: .1rem;
+      }
+      .navbar-right {
+        margin-left: 0rem;
+        margin-top: -0.25rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <nav class="navbar navbar-default navbar-fixed-top" style="background:#fff">
+      <div class="container-fluid" style="padding-top:.2rem;">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" style="display:inline-block;width:2.7rem;height:1rem;margin-right:.3rem">
+            <img src="./img/logo.png" class="logoimg" alt="">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">菜品信息
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu food-list" style="width:100%;text-decoration:none">
+
+                <a href="#doc">医生推荐</a>
+                <a href="#xiaochao">小炒</a>
+                <a href="#taocan">套餐</a>
+                <a href="#xiaocao ">小菜</a>
+                <a href="#yingyangcan ">营养餐</a>
+                <a href="#xiaochi">小吃</a>
+                <a href="#xiaochi">粥</a>
+                <a href="#fenmian">粉面</a>
+
+
+              </ul>
+            </li>
+            <li role="separator " class="divider "></li>
+            <li>
+              <a href="orderList.html ">我的订单
+              </a>
+            </li>
+            <li>
+              <a href="info.html ">个人信息</a>
+            </li>
+
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text " class="form-control " placeholder="Search ">
+            </div>
+            <button type="submit " class="btn btn-default " style="display:inline-block;">提交</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right " style="width:auto;padding-top:.3rem;font-size:.24rem;margin-right:.4rem ;">
+            <a href="login.html " style="text-align:center;padding:0;margin:0;color:#777 ">登录 &nbsp;|</a>
+            <a href="sign.html " style="text-align:center;padding:0;margin:0; color:#777">&nbsp;注册</a>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row food">
+        <p class="title" id="doc">医生推荐</p>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <a href="food-detail.html">
+            <img src="./img/奥尔良蜜汁烤鸡翅.jpg " alt=" ">
+            <a/>
+            <div class="detail-con">
+
+              <span class="food-name ">鱼香茄子</span>
+              <span class="price ">￥12</span>
+              <p>
+                <span class="people ">适合人群</span>
+                <span class="classification ">全部</span>
+              </p>
+              <p class="sale ">
+                <span>月销量：</span>
+                <span class="classification ">123</span>
+                <img src="./img/cart.png " class="cart " alt=" ">
+                <span class="buy ">购买</span>
+              </p>
+
+            </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row food ">
+        <p class="title" id="xiaochao">小炒</p>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row food ">
+        <p class="title" id="taocan">套餐</p>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-3 food-detail ">
+          <img src="http://recipe0.hoto.cn/pic/recipe/l/7a/55/218490_fd13c9.jpg " alt=" ">
+          <div class="detail-con ">
+            <span class="food-name ">鱼香茄子</span>
+            <span class="price ">￥12</span>
+            <p>
+              <span class="people ">适合人群</span>
+              <span class="classification ">全部</span>
+            </p>
+            <p class="sale ">
+              <span>月销量</span>
+              <span class="classification ">123</span>
+              <img src="./img/cart.png " class="cart " alt=" ">
+              <span class="buy ">购买</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer ">
+      copyright©“医点点”医院点餐平台
+    </div>
+</body>
+<script>
+  ! function (e) {
+    var t = e.document,
+      n = t.documentElement,
+      i = "orientationchange " in e ? "orientationchange " : "resize ",
+      a = function e() {
+        var t = n.getBoundingClientRect().width;
+        return n.style.fontSize = 5 * Math.max(Math.min(t / 750 * 20, 11.2), 8.55) + "px ", e
+      }();
+    n.setAttribute("data-dpr ", e.navigator.appVersion.match(/iphone/gi) ? e.devicePixelRatio : 1), /iP(hone|od|ad)/.test(
+        e.navigator.userAgent) && (t.documentElement.classList.add("ios "), parseInt(e.navigator.appVersion.match(
+        /OS (\d+)_(\d+)_?(\d+)?/)[1], 10) >= 8 && t.documentElement.classList.add("hairline ")), t.addEventListener &&
+      (e.addEventListener(i, a, !1), t.addEventListener("DOMContentLoaded ", a, !1))
+  }(window);
+</script>
+
+</html>

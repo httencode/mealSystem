@@ -1,0 +1,99 @@
+.header {
+  position: absolute;
+  background: #fff;
+  z-index: 10000;
+  width: 100%;
+  height: 1.1rem;
+  border-bottom: 1px solid #48b49c; }
+  .header .logo {
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    background: url("../img/logo.png") no-repeat;
+    background-size: 2rem auto;
+    margin-left: 10%;
+    margin-top: .3rem; }
+
+.container {
+  padding-top: 1.2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+  padding: .2rem;
+  padding-top: 0;
+  border-radius: .05rem;
+  padding-bottom: .4rem; }
+  .form input {
+    margin: 0 auto;
+    display: block;
+    height: .7rem;
+    padding-left: .2rem;
+    margin-top: .3rem;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid rgba(125, 125, 125, 0.4); }
+  .form .gender {
+    margin: 0 auto; }
+    .form .gender input[type='radio'] {
+      width: .3rem;
+      height: .3rem;
+      display: inline-block;
+      margin: .2rem 0; }
+  .form .submit {
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    font-size: .28rem;
+    background: #48b49c; }
+    .form .submit:hover {
+      background: #4ec2a7; }
+  .form .sign {
+    font-size: .25rem;
+    text-align: left; }
+
+.manage {
+  display: block;
+  margin: 0 auto;
+  background: rgba(72, 180, 156, 0.8);
+  color: #fff;
+  padding: .06rem 0 .06rem .1rem;
+  font-size: .26rem;
+  margin-top: .14rem;
+  margin-bottom: .2rem; }
+
+.addr {
+  height: .9rem;
+  margin: 0 auto;
+  list-style: none;
+  padding-bottom: .1rem;
+  clear: both; }
+  .addr li {
+    float: left;
+    color: #777; }
+    .addr li .phone {
+      padding: 0 10px; }
+  .addr .def {
+    width: 10%;
+    height: 20px;
+    position: relative; }
+    .addr .def input {
+      display: block;
+      margin-top: 0px;
+      margin-left: 0; }
+  .addr .address {
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .addr .edit {
+    width: 15%;
+    padding-left: 3%; }
+  .addr .del {
+    width: 10%;
+    padding-left: 3%; }
+
+/*# sourceMappingURL=info.css.map */

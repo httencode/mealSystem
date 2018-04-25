@@ -1,0 +1,288 @@
+html,
+body {
+  background: #ecedef; }
+
+.submit-order {
+  list-style: none;
+  background: #ecedef;
+  overflow: hidden;
+  padding-top: 55px; }
+  .submit-order .delivery {
+    height: 0.8rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top: 0.26rem;
+    background: white;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 0.2rem;
+    font-size: 14px;
+    position: relative; }
+    .submit-order .delivery span {
+      font-size: 14px;
+      color: #666666;
+      letter-spacing: 0; }
+    .submit-order .delivery .icon {
+      width: 0.04rem;
+      height: 0.24rem;
+      background: #2bccc1;
+      margin-right: 0.1rem;
+      position: absolute;
+      margin-top: 0.25rem;
+      margin-left: 0.2rem; }
+    .submit-order .delivery .delier {
+      padding-top: 0.2rem;
+      display: inline-block;
+      margin-left: 0.4rem; }
+    .submit-order .delivery .choozen {
+      width: 0.32rem;
+      height: 0.32rem;
+      position: absolute;
+      margin-top: 0.2rem;
+      right: 0.2rem; }
+  .submit-order .add-address {
+    background: #fff;
+    margin: 0 0.2rem;
+    padding-left: 0.2rem;
+    height: 1rem;
+    border-bottom: 1px solid #eaeaea;
+    position: relative; }
+    .submit-order .add-address .add-img {
+      width: 0.28rem;
+      height: 0.28rem;
+      position: absolute;
+      margin-top: 0.35rem; }
+    .submit-order .add-address .addr-detail {
+      font-size: 15px;
+      color: #2bccc1;
+      letter-spacing: 0.4px;
+      line-height: 22px;
+      margin-top: 0.25rem;
+      padding-left: 0.45rem;
+      position: absolute; }
+    .submit-order .add-address .add-enter {
+      width: 0.12rem;
+      height: 0.2rem;
+      float: right;
+      margin-top: 0.3rem;
+      margin-right: 0.2rem; }
+  .submit-order .address-part {
+    clear: both;
+    background: white;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    height: auto;
+    position: relative; }
+    .submit-order .address-part .address-img {
+      width: 0.24rem;
+      height: 0.3rem;
+      margin-left: 0.2rem;
+      position: absolute;
+      margin-top: 0.2rem; }
+    .submit-order .address-part .address-con {
+      font-size: 15px;
+      color: #333333;
+      margin-left: 0.6rem;
+      padding-right: 0.5rem;
+      font-weight: 600;
+      padding-top: 0.15rem;
+      padding-bottom: 0.2rem; }
+    .submit-order .address-part .enter {
+      width: 0.12rem;
+      height: 0.2rem;
+      position: absolute;
+      bottom: 0.1rem;
+      right: 0.2rem;
+      top: 0;
+      margin: auto 0; }
+  .submit-order .info {
+    height: 0.86rem;
+    background: white;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    padding: 0 0.6rem;
+    border-top: 1px solid #eaeaea; }
+    .submit-order .info li {
+      list-style: none;
+      float: left;
+      font-size: 14px;
+      color: #888888;
+      letter-spacing: 0;
+      padding-top: 0.25rem; }
+    .submit-order .info .gender {
+      padding: 0 0.4rem 0 0.2rem;
+      padding-top: 0.25rem; }
+  .submit-order .arrival {
+    border-top: 1px solid #eaeaea;
+    background: white;
+    height: 0.86rem;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    position: relative; }
+    .submit-order .arrival .arrival-img {
+      width: 0.28rem;
+      position: absolute;
+      height: 0.28rem;
+      margin-top: 0.1rem; }
+    .submit-order .arrival .time {
+      font-size: 15px;
+      color: #333333;
+      letter-spacing: 0.4px;
+      position: absolute;
+      margin-top: 0;
+      margin-left: 0.4rem;
+      font-weight: 600; }
+  .submit-order .self-get {
+    height: auto;
+    background: white;
+    padding-top: 0.05rem;
+    margin: 0.2rem; }
+    .submit-order .self-get .attention {
+      font-size: 12px;
+      color: #666666;
+      letter-spacing: 0;
+      margin: 0.2rem 0.2rem 0;
+      padding: 0.1rem;
+      background: #ecedef; }
+  .submit-order .order-list {
+    height: auto;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    background: #fff;
+    padding-top: 0.2rem;
+    padding-bottom: .2rem; }
+    .submit-order .order-list li {
+      font-size: 14px;
+      color: #333;
+      letter-spacing: 0;
+      overflow: hidden; }
+      .submit-order .order-list li span {
+        display: inline-block;
+        padding: 0 0.2rem 0.3rem; }
+      .submit-order .order-list li .price {
+        float: right; }
+    .submit-order .order-list li:first-child {
+      padding-top: 0.2rem; }
+    .submit-order .order-list .total {
+      height: 1.1rem;
+      padding: 0.2rem 0.2rem 0.4rem;
+      position: relative;
+      border-top: 1px dotted #ddd; }
+      .submit-order .order-list .total span {
+        font-size: 15px;
+        color: #333333;
+        letter-spacing: 0;
+        height: 1.1rem;
+        line-height: 1.1rem;
+        position: absolute;
+        top: 0rem; }
+      .submit-order .order-list .total .left-dot,
+      .submit-order .order-list .total .right-dot {
+        background: #ecedef;
+        width: 0.24rem;
+        border-radius: 0.24rem;
+        height: 0.24rem;
+        position: absolute; }
+      .submit-order .order-list .total .left-dot {
+        margin-top: -0.13rem;
+        margin-left: -0.3rem; }
+      .submit-order .order-list .total .right-dot {
+        margin-top: -0.13rem;
+        float: right;
+        right: -0.1rem; }
+      .submit-order .order-list .total .payment {
+        font-size: 18px;
+        color: #fb493b;
+        letter-spacing: 0;
+        right: 0.2rem; }
+  .submit-order .remark {
+    height: 0.84rem;
+    margin-top: 0.2rem;
+    font-size: 14px;
+    color: #666666;
+    letter-spacing: 0;
+    padding: 0.2rem;
+    background: #fff;
+    margin: 0.2rem; }
+    .submit-order .remark .remark-enter {
+      width: 0.12rem;
+      height: 0.2rem;
+      float: right;
+      margin-right: 0.1rem;
+      margin-top: 0.15rem; }
+
+#remark {
+  width: 98%;
+  outline: none;
+  display: block;
+  height: 70px;
+  margin: 0 auto;
+  padding: 0.1rem;
+  margin-top: 15px;
+  resize: none; }
+
+.submit-item {
+  width: 100%;
+  height: 1.38rem;
+  background: #fafafa;
+  margin-bottom: 0.1rem;
+  position: relative; }
+  .submit-item .list-item {
+    width: 0.96rem;
+    height: 0.96rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem; }
+  .submit-item .item-con {
+    width: 100%;
+    height: auto;
+    padding-top: 0.2rem;
+    padding-left: 1.4rem; }
+    .submit-item .item-con .tit {
+      font-size: 14px;
+      color: #333333; }
+    .submit-item .item-con .amount {
+      font-size: 12px;
+      color: #999999;
+      padding-top: 0.2rem;
+      letter-spacing: 0.24px; }
+
+.addressitem {
+  width: 100%;
+  height: 1.48rem;
+  background: white;
+  position: relative;
+  border-top: 1px solid #eaeaea; }
+  .addressitem .delete {
+    width: 0.28rem;
+    height: 0.28rem;
+    position: absolute;
+    margin-left: 0.25rem;
+    margin-top: 0.6rem; }
+  .addressitem .address-detail {
+    position: absolute;
+    width: 80%;
+    margin-left: .6rem;
+    height: 1rem;
+    padding-left: 0.3rem;
+    margin-top: 0.2rem; }
+    .addressitem .address-detail .address-desc {
+      font-size: 14px;
+      color: #333333;
+      letter-spacing: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .addressitem .address-detail .info li {
+      font-size: 14px !important;
+      color: #888888;
+      letter-spacing: 0;
+      float: left;
+      padding-top: 0.1rem; }
+    .addressitem .address-detail .edit {
+      width: 0.1rem;
+      height: 0.1rem;
+      float: right; }
+
+/*# sourceMappingURL=orderList.css.map */
